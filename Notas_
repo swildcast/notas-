@@ -1,0 +1,27 @@
+package nota_def;
+
+import java.util.Scanner;
+
+public class notas {
+	double nota1,nota2,nota3;
+	double acu1,acu2,acu3,def;
+	
+	Scanner entrada = new Scanner(System.in);
+	
+	public void IngreseNotas() {
+		System.out.println("Ingrese la nota del estudiante");
+		System.out.print("Ingrese nota 1: ");
+		nota1 = entrada.nextDouble();   
+		System.out.print("Ingrese nota 2: ");
+		nota2 = entrada.nextDouble(); 
+		System.out.print("Ingrese nota 3: ");
+		nota3 = entrada.nextDouble(); 
+	
+	}
+	public static void main(String[] args) {
+		notas fc = new notas();
+	    fc.IngreseNotas();
+
+	}
+
+}
